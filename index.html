@@ -1,0 +1,65 @@
+<!-- 
+    Use the Twitchtv JSON API: by Jacob Stoebel
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Twitch Streamers</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  <!-- fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+
+  <!-- my assets -->
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
+</head>
+
+<body>
+<div id="body">
+<div class="container">
+  <h2 id="header">TWITCH STREAMERS</h2>
+  <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="pill" href="#all">All</a></li>
+    <li><a data-toggle="pill" href="#online">Online</a></li>
+    <li><a data-toggle="pill" href="#offline">Offline</a></li>
+  </ul>
+  
+
+
+  
+      <div class="tab-content">
+        <div id="all" class="tab-pane fade in active">
+          <h3>All</h3>
+
+            <div id="all-row-online" class="row online"></div>
+            <div id="all-row-offline" class="row offline"></div>
+
+        </div>
+        <div id="online" class="tab-pane fade">
+          <h3>Online</h3>
+
+            <div id="online-row" class="row online"></div>
+        
+        </div>
+        <div id="offline" class="tab-pane fade">
+          <h3>Offline</h3>
+
+            <div id="offline-row" class="row offline"></div>
+
+        </div>
+        
+      </div>
+
+</div>
+</div>
+</body>
+</html>

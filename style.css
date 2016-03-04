@@ -1,0 +1,50 @@
+html {
+  background-color: #a6cacc;
+}
+
+#body {
+  background-color: #a6cacc;
+}
+
+#header{
+    font-family: Oswald;
+    font-size: 48pt;
+}
+
+.tile .info {
+  min-height: 100px;
+}
+
+.tile img {
+    width: 100%;
+    border-radius: 50%;
+
+}
+
+
+.valign {
+  font-size: 0;
+}
+
+.valign > [class*="col"] {
+  display: inline-block;
+  float: none;
+  font-size: 14px;
+  font-size: 1rem;
+  vertical-align: middle;
+}
+
+
+div.stream-info{
+
+    font-size: 20pt;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+
+.col img {
+  width: 100%;
+  height: 100%;
+}
